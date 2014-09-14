@@ -21,9 +21,14 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngRoute', 'Satellizer', 'm
         controller: 'ProfileCtrl',
         protected: true
       })
-      .otherwise({
-        redirectTo: '/'
+      .when('/questions', {
+        templateUrl: 'views/questions.html',
+        // controller: 'ProfileCtrl',
+        // protected: true
       });
+      // .otherwise({
+      //   redirectTo: '/'
+      // });
 
     $authProvider.facebook({
       clientId: '657854390977827'
