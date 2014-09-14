@@ -12,6 +12,9 @@ a {
   color: #000;
 }
 
+p{
+  font-size: 20px;
+}
 .text-muted {
   color: #90939a;
 }
