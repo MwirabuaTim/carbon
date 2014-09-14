@@ -18,14 +18,14 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngRoute', 'Satellizer', 'm
       })
       .when('/profile', {
         templateUrl: 'views/profile.html'
-        , controller: 'ProfileCtrl',
-        protected: true
+        , controller: 'ProfileCtrl'
+        , protected: true
       })
       .when('/questions', {
         templateUrl: 'views/questions.html'
-        //, controller: 'ProfileCtrl'
-        //, protected: true
-      });
+        // , controller: 'ProfileCtrl',
+        // protected: true
+      })
       .otherwise({
         redirectTo: '/'
       });
