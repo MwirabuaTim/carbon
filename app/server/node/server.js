@@ -259,7 +259,7 @@ app.post('/auth/github', function(req, res) {
   request.get({ url: accessTokenUrl, qs: params }, function(err, response, accessToken) {
     accessToken = qs.parse(accessToken);
 
-    var headers = { 'User-Agent': 'Satellizer' };
+    var headers = { 'User-Agent': 'Carbon' };
 
     // Step 2. Retrieve profile information about the current user.
     request.get({ url: userApiUrl, qs: accessToken, headers: headers, json: true }, function(err, response, profile) {
@@ -603,8 +603,6 @@ app.get('/auth/unlink/:provider', ensureAuthenticated, function(req, res, next) 
   });
 });
 
-
-
 /*
  |--------------------------------------------------------------------------
  | Start the Server
@@ -613,4 +611,3 @@ app.get('/auth/unlink/:provider', ensureAuthenticated, function(req, res, next) 
 app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });
-
