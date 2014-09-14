@@ -35,7 +35,7 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngRoute', 'Satellizer', 'm
     });
 
     $authProvider.google({
-      clientId: '631036554609-v5hm2amv4pvico3asfi97f54sc51ji4o.apps.googleusercontent.com'
+      clientId: '1003196591091-v3nlbnbjatp6ep155vhhbjgeqq8vkhs6.apps.googleusercontent.com'
     });
 
     $authProvider.github({
