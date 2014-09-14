@@ -5,26 +5,26 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngRoute', 'Satellizer', 'm
         templateUrl: 'views/home.html'
       })
       .when('/login', {
-        templateUrl: 'views/login.html',
-        controller: 'LoginCtrl'
+        templateUrl: 'views/login.html'
+        , controller: 'LoginCtrl'
       })
       .when('/signup', {
-        templateUrl: 'views/signup.html',
-        controller: 'SignupCtrl'
+        templateUrl: 'views/signup.html'
+        , controller: 'SignupCtrl'
       })
       .when('/logout', {
-        template: null,
-        controller: 'LogoutCtrl'
+        template: null
+        , controller: 'LogoutCtrl'
       })
       .when('/profile', {
-        templateUrl: 'views/profile.html',
-        controller: 'ProfileCtrl',
+        templateUrl: 'views/profile.html'
+        , controller: 'ProfileCtrl',
         protected: true
       })
       .when('/questions', {
-        templateUrl: 'views/questions.html',
-        // controller: 'ProfileCtrl',
-        // protected: true
+        templateUrl: 'views/questions.html'
+        //, controller: 'ProfileCtrl'
+        //, protected: true
       });
       .otherwise({
         redirectTo: '/'
