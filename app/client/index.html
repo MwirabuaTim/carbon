@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Satellizer</title>
+  <title>Carbon</title>
   <link rel="shortcut icon" href="favicon.png">
   <meta name="globalsign-domain-verification" content="Al-spX8fA5NNgAkjNI5FX_J2diSYK1TLG70LxQ1yDc" />
   <link href='//fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="//cdn.jsdelivr.net/animatecss/3.2.0/animate.css" rel="stylesheet">
+  <link href="stylesheets/ionicons.min.css" rel="stylesheet">
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheets/animate.css" rel="stylesheet">
   <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
@@ -26,19 +26,22 @@
     <li><a href="/#/signup">Sign up</a></li>
   </ul>
   <ul ng-if="isAuthenticated" class="nav navbar-nav pull-right">
+    <li><a href="/#/nglesson">Test</a></li>
     <li><a href="/#/logout">Logout</a></li>
   </ul>
 </div>
 
 <div ng-view class="fadeZoom"></div>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.13/angular.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.13/angular-messages.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.13/angular-resource.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.13/angular-route.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.13/angular-animate.js"></script>
-<script src="//oss.maxcdn.com/angular.strap/2.0.0/angular-strap.min.js"></script>
-<script src="//oss.maxcdn.com/angular.strap/2.0.0/angular-strap.tpl.min.js"></script>
+
+
+<script src="vendor/angular.js"></script>
+<script src="vendor/angular-messages.js"></script>
+<script src="vendor/angular-resource.js"></script>
+<script src="vendor/angular-route.js"></script>
+<script src="vendor/angular-animate.js"></script>
+<script src="vendor/angular-strap.min.js"></script>
+<script src="vendor/angular-strap.tpl.min.js"></script>
 <script src="vendor/satellizer.js"></script>
 
 <script src="app.js"></script>
@@ -47,6 +50,10 @@
 <script src="controllers/signup.js"></script>
 <script src="controllers/logout.js"></script>
 <script src="controllers/profile.js"></script>
+<script src="controllers/questions.js"></script>
+<script src="controllers/nglesson.js"></script>
 <script src="services/account.js"></script>
+<script src="vendor/jquery.js"></script>
+<script src="vendor/svgcheckbx.js"></script>
 </body>
 </html>

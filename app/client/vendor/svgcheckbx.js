@@ -1,3 +1,15 @@
+console.log('early! ' + new Date(Date.now()));
+
+$(document).on('ready', function(){
+
+
+// window.onload = initStyle;
+// window.unload = initStyle;
+    
+// function initStyle() {
+setTimeout(function(){
+console.log('just started! ' + new Date(Date.now()));
+
 if( document.createElement('svg').getAttributeNS ) {
 
 	var checkbxsCross = Array.prototype.slice.call( document.querySelectorAll( 'form.ac-cross input[type="checkbox"]' ) ),
@@ -135,3 +147,7 @@ if( document.createElement('svg').getAttributeNS ) {
 	}
 
 }
+
+}, 2000);
+// }
+})

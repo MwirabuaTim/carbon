@@ -23,8 +23,13 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngRoute', 'Satellizer', 'm
       })
       .when('/questions', {
         templateUrl: 'views/questions.html'
-        // , controller: 'ProfileCtrl',
+        , controller: 'QuestionsCtrl'
         , protected: true
+      })
+      .when('/nglesson', {
+        templateUrl: 'views/nglesson.html'
+        , controller: 'Ctrl'
+        // , protected: true
       })
       .otherwise({
         redirectTo: '/'
