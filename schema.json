@@ -1,0 +1,54 @@
+{
+	t1: { // first test
+		q1: { // first question
+			q: '', // the question (string)
+			type: '', // radio|checkbox (string)
+			a1: '', // answer 1 (string)
+			w1: 0, // weight of answer 1 (number)
+			a2: '', // answer 2 (string)
+			w2: 0, // weight of answer 2 (number)
+			a3: '', // answer 3 (string)
+			w3: 0 // weight of answer 3 (number)
+			// ...more
+		}
+		q2: { // second question
+			q: '', // the question (string)
+			type: '', // radio|checkbox (string)
+			a1: '', // answer 1 (string)
+			w1: 0, // weight of answer 1 (number)
+			a2: '', // answer 2 (string)
+			w2: 0, // weight of answer 2 (number)
+			a3: '', // answer 3 (string)
+			w3: 0 // weight of answer 3 (number)
+			// ...more
+		}
+		// ...more
+	}
+
+	t2: {
+		q1: {
+			q: '', // the question (string)
+			type: '', // radio|checkbox (string)
+			a1: '', // answer 1 (string)
+			w1: 0, // weight of answer 1 (number)
+			a2: '', // answer 2 (string)
+			w2: 0, // weight of answer 2 (number)
+			a3: '', // answer 3 (string)
+			w3: 0 // weight of answer 3 (number)
+			// ...more
+		}
+		q2: {
+			q: '', // the question (string)
+			type: '', // radio|checkbox (string)
+			a1: '', // answer 1 (string)
+			w1: 0, // weight of answer 1 (number)
+			a2: '', // answer 2 (string)
+			w2: 0, // weight of answer 2 (number)
+			a3: '', // answer 3 (string)
+			w3: 0 // weight of answer 3 (number)
+			// ...more
+		}
+		// ...more
+	}
+	
+}
