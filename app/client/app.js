@@ -26,6 +26,10 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngRoute', 'Satellizer', 'm
         , controller: 'QuestionsCtrl'
         , protected: true
       })
+      .when('/q', {
+        templateUrl: 'views/q.html'
+        , controller: 'QuestionsCtrl'
+      })
       .when('/nglesson', {
         templateUrl: 'views/nglesson.html'
         , controller: 'Ctrl'
