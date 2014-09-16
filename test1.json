@@ -1,0 +1,25 @@
+{
+	t1: { 
+		q1: { 
+			q: 'Do you grow your own fruits and vegetables?', 
+			type: 'radio', 
+			a1: 'Yes', 
+			w1: 1, 
+			a2: 'No', 
+			w2: 0
+		}
+		q2: { 
+			q: 'Which form of clean energy do you use?', 
+			type: 'checkbox', 
+			a1: 'Wind Energy', 
+			w1: 2, 
+			a2: 'Electricity', 
+			w2: 0, 
+			a3: 'Biogas', 
+			w3: 1,
+			q3: 'Solar Panels', 
+			w3: 3
+		}
+	}
+	
+}
